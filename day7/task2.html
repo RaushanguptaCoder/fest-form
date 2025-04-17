@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            background-color: beige;
+            height: 700px;
+            width: 700px;
+            display: grid;
+            gap: 10px;
+            grid-template-areas:"brand-name navbar navbar navbar"
+            "logo main main ad-3"
+            "ad-2 main main ad-3"
+            "main-stage main-stage main-stage main-stage"
+            "footer footer logo-2 logo-3"
+            
+
+
+        }
+        .brand-name{
+            background-color: blue;
+            grid-area: brand-name;
+        }
+        .navbar{
+            background-color: blue;
+         grid-area:navbar ;
+        }
+        .logo{
+            background-color: blue;
+        grid-area:logo ;
+        }
+        .main{
+            background-color: blue;
+            grid-area:main ;
+        }
+        .ad-3{
+            background-color: blue;
+            grid-area: ad-3;
+        }
+      .ad-2{
+        background-color: blue;
+        grid-area: ad-2;
+     }
+     .main-stage{
+        background-color:blue ;
+        grid-area:main-stage ;
+     }
+     .footer{
+        background-color:blue ;
+        grid-area:footer ;
+     }
+     .logo-2{
+        background-color: blue;
+        grid-area:logo-2 ;
+     }
+     .logo-3{
+        background-color: blue;
+        grid-area: logo-3;
+     }
+        
+      
+    </style>
+</head>
+<body>
+   <div class="container">
+    <div class="brand-name">name</div>
+    <div class="navbar">navbar</div>
+    <div class="logo">logo</div>
+    <div class="main">main</div>
+    <div class="ad-3">ad-3</div>
+    <div class="ad-2">ad-2</div>
+    <div class="main-stage">main-stage</div>
+    <div class="footer">footer</div>
+    <div class="logo-2">logo-2</div>
+    <div class="logo-3">logo-3</div>
+   </div>
+</body>
+</html>
