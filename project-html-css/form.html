@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form details</title>
+    <style>
+          * {
+            margin: 0;
+            padding: 0px;
+            box-sizing: border-box;
+            font-family: Montserrat;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: beige;
+            padding: 0 20px;
+            height: 90px;
+            position: sticky;
+            top: 0;
+        }
+
+        header h2 {
+            color: rgb(17, 236, 68);
+            font-size: 60px;
+        }
+        header h2:hover{
+            transform: scale(.99);
+            transition: all .1s ease-in-out;
+            font-size: 100px;
+            cursor: pointer;
+            color: #e71313;
+            
+        }
+        nav ul {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            list-style: none;
+        }
+
+        nav ul li {
+            margin: 0 20px;
+            cursor: pointer;
+            list-style: none;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: rgb(21, 55, 227);
+            font-weight: bold;
+            font-size: 30px;
+        }
+
+        nav ul li a:hover {
+            text-decoration: dotted;
+            color: aqua;
+            font-size: 50px;
+        }
+        section h2{
+            color: white;
+            font-size: 30px;
+        }
+        section p{
+            color: aliceblue;
+            font-size: 20px;
+        }
+        .form-section{
+            max-width: 900px;
+            margin: 80px auto;
+            padding: 30px;
+            background-color: rgb(94, 94, 87);
+            border-radius: 20px;
+            box-shadow: 0,0,20px #7f6b6b;
+        }
+        form label{
+            display:block;
+            margin-bottom: 5px;
+            color:beige;
+            font-size: 20px;
+        }
+        select{
+            width: 100%;
+            padding: 10px;
+            color: aqua;
+            border: none;
+            border-radius: 20px;
+            margin-bottom: 10px;
+            font-size: medium;
+        }
+        input{
+            width: 100%;
+            padding: 10px;
+            color: aqua;
+            border: none;
+            border-radius: 20px;
+            margin-bottom: 10px;
+            font-size: medium;
+        }
+        input::placeholder{
+            color: aqua;
+        }
+        #booknow{
+            background: linear-gradient(to right,magenta,blue);
+            color: black;
+            padding: 13px 26px;
+            border: rgb(198, 149, 149) solid;
+            font-size: 40px;
+            cursor: pointer;
+        }
+       #booknow:hover{
+        color: red;
+        background: linear-gradient(to right,blue,magenta);
+        padding: 30px 50px;
+        font-weight: bold;
+        font-style: italic;
+        border: solid red;
+       }
+       option{
+        background:rgb(54, 48, 49);
+       }
+    </style>
+</head>
+<body>
+    <header>
+        <h2>Gupta Travels</h2>
+        <nav>
+            <ul>
+                <li><a href="#Hero">HOME</a></li>
+                <li><a href="#destination">DESTINATIONS</a></li>
+                <li><a href="">REVIEWS</a></li>
+                <li><a href="">CONTACT</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="form-section" aria-labelledby="bookingFormTitle">
+            <h2 id="bookingFormTitle"> Booking Form</h2>
+            <form action="#" method="post" aria-labelledby="formDescription">
+            <p id="formDescription" style="margin-bottom:25px ;"> Provide Your to go through Booking process.</p>
+            
+            <label for="name">Name :</label>
+            <input type="text" id="name" name="name" placeholder="Enter Your Name">
+               
+            <label for="email"> E-mail :</label>
+            <input type="email" name="email" id="email" placeholder="Enter your email">
+
+            <label for="mobile"> Mobile-Number :</label>
+            <input type="number" name="number" id="Mobile" placeholder="ENter your mobile number" >
+
+            <label for="date"> Date :</label>
+            <input type="date" name="date" id="date" placeholder="Enter the date">
+
+            <label for="destination"> Destination :</label>
+            <select name="destination" id="destination" aria-placeholder="choose your area">
+               <option value="">Choose Destination</option>
+               <option value="aquatic"> Aquatic</option>
+               <option value="desert"> Desert</option>
+               <option value="diving"> Scuba Diving</option>
+               <option value="everest"> Mount Everest</option>
+               <option value="forest"> Forest</option>
+               <option value="island"> island</option>
+               <option value="mountains"> Mountains</option>
+               <option value="ocean"> Ocean</option>
+               <option value="wildlife"> Wildlife</option>
+               <option value="waterfalls"> waterfalls</option>
+                </select>
+
+            <label for="People"> Number of People</label>  
+            <input type="number" name="People" id="People" aria-placeholder="enter number of person" min="1" max="20">
+
+            <label for="Food"> Food :</label>
+            <select name="Food" id="Food" aria-placeholder="Select your food type">
+                <option value=""> Choose food </option>
+                <option value="Vegetarian">Vegetarian</option>
+                <option value="Non-Veg"> Non-vegetarian </option>
+                <option value="Vegan"> Vegan </option>
+                </select>
+             
+            <label for="drinks"> Drinks :</label>    
+            <select name="drinks" id="drinks" aria-placeholder="select your drink ">
+                <option value=""> Choose drink </option>
+                <option value="Alcoholic"> Alcoholic </option>
+                <option value="non-alcoholic"> Non-Alcoholic</option>
+                </select>
+
+            <label for="payment"> Payment :</label> 
+            <select name="payment" id="payment" aria-placeholder="select your payment mode">
+                <option value="">Select payment type</option>
+                <option value="cash">cash</option>
+                <option value="UPI">UPI</option>
+                <option value="credit/debit card">Credit/Debit Card</option>
+                <option value="netbanking">Netbanking</option>
+                </select>   
+
+                <input id="booknow" type="submit" value="Book Now" aria-label="Booking Now">
+            </form>
+            </section>
+        </main>
+</body>
+</html>
