@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>form details</title>
+    <title>  form details</title>
     <style>
           * {
             margin: 0;
@@ -11,12 +11,17 @@
             box-sizing: border-box;
             font-family: Montserrat;
         }
+        body {
+            background: url('travel.webp') no-repeat center center/cover;
+            background-attachment: fixed;
+            color: white;
+        }
 
         header {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            background-color: beige;
+            background-color: black;
             padding: 0 20px;
             height: 90px;
             position: sticky;
@@ -24,8 +29,9 @@
         }
 
         header h2 {
-            color: rgb(17, 236, 68);
+            color: white;
             font-size: 60px;
+            
         }
         header h2:hover{
             transform: scale(.99);
@@ -57,8 +63,11 @@
 
         nav ul li a:hover {
             text-decoration: dotted;
-            color: aqua;
+            color: rgb(251, 3, 197);
             font-size: 50px;
+        }
+        section{
+            background-image: url("./travel.webp");
         }
         section h2{
             color: white;
@@ -72,9 +81,10 @@
             max-width: 900px;
             margin: 80px auto;
             padding: 30px;
-            background-color: rgb(94, 94, 87);
+            background-color: rgb(14, 115, 216);
             border-radius: 20px;
             box-shadow: 0,0,20px #7f6b6b;
+            
         }
         form label{
             display:block;
@@ -82,26 +92,29 @@
             color:beige;
             font-size: 20px;
         }
+
         select{
             width: 100%;
             padding: 10px;
-            color: aqua;
+            color: rgb(60, 69, 69);
             border: none;
-            border-radius: 20px;
+            border-radius: 5px;
             margin-bottom: 10px;
             font-size: medium;
+            background-color:aliceblue ;
         }
         input{
             width: 100%;
             padding: 10px;
-            color: aqua;
+            color: rgb(81, 90, 90);
             border: none;
-            border-radius: 20px;
+            border-radius: 5px;
             margin-bottom: 10px;
             font-size: medium;
+            background-color:aliceblue;
         }
         input::placeholder{
-            color: aqua;
+            color: rgb(61, 67, 61);
         }
         #booknow{
             background: linear-gradient(to right,magenta,blue);
@@ -110,11 +123,11 @@
             border: rgb(198, 149, 149) solid;
             font-size: 40px;
             cursor: pointer;
+            border-radius: 50px;
         }
        #booknow:hover{
         color: red;
         background: linear-gradient(to right,blue,magenta);
-        padding: 30px 50px;
         font-weight: bold;
         font-style: italic;
         border: solid red;
@@ -126,7 +139,7 @@
 </head>
 <body>
     <header>
-        <h2>Gupta Travels</h2>
+       <a href="index.html">  <h2>Gupta Travels</h2></a>
         <nav>
             <ul>
                 <li><a href="#Hero">HOME</a></li>
