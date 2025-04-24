@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation</title>
+    <style>
+        .container{
+            background-color: beige;
+            height: 700px;
+            width: 1500px;
+            /* border-radius: 50%; */
+        }
+        .ball{
+            width: 200px;
+            height: 200px;
+            background-color: green;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            animation-name: jump;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            position: relative;
+
+        }
+        @keyframes jump{
+            0%{
+                top: 0px;
+                left : 0px;
+            }
+            25%{
+                top:0px;
+                left: 80vw;
+            }
+            50%{
+                top:75vh;
+                left: 80vw;
+            }
+            75%{
+                top:75vh;
+                left:0px;
+            }
+            100%{
+                top: 0px;
+                left : 0px;
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="ball"> jumping ball</div>
+        <div></div>
+    </div>
+    
+</body>
+</html>

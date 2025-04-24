@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .CSS-GRID{
+            background-color: beige;
+            height: 700px;
+            width: 700px;
+            display: grid;
+            gap: 10px;
+            grid-template-areas: "header header header"
+            "side-bar content-1 content-1"
+            "side-bar content-2 content-3"
+            " footer footer footer"
+            
+
+
+        }
+        .header{
+            background-color: blue;
+            grid-area: header;
+        }
+        .side-bar{
+            background-color: blue;
+         grid-area: side-bar;
+        }
+        .content-1{
+            background-color: blue;
+        grid-area:content-1 ;
+        }
+        .content-2{
+            background-color: blue;
+            grid-area: content-2;
+        }
+        .content-3{
+            background-color: blue;
+            grid-area: content-3;
+        }
+      .footer{
+        background-color: blue;
+        grid-area: footer ;
+     }
+        
+      
+    </style>
+</head>
+<body>
+    <div class="CSS-GRID">
+    <div class="header">header</div>
+    <div class="side-bar">side bar</div>
+    <div class="content-1">content 1</div>
+    <div class="content-2">content 2</div>
+    <div class="content-3">content 3</div>
+    <div class="footer">footer</div>
+</div>
+</body>
+</html>
