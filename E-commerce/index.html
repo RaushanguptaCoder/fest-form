@@ -10,25 +10,44 @@
         padding: 0px;
         box-sizing: border-box;
       }
+      body{
+        height: 100vh;
+        width: 100%;
+      }
       header {
         display: flex;
         align-items: center;
         justify-content: center;
-        padding: 150px;
+        padding: 8%;
         font-style: italic;
-        background-image: url(./header.png);
+        background-image: url(./header.jpg);
         background-size: cover;
+        background-position:center;
         position: relative;
       }
       Header h2 {
-        font-size: 100px;
-        font-weight: bold;
-        position: absolute;
-        color: rgb(15, 14, 14);
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       position: absolute;
+       font-size: 6rem;
+       text-transform: uppercase;
+       background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4),
+       rgba(0, 0, 0, 0.6));
+       width: 100%;
+       height: 100%;
+       font-weight: 900;
+       color: white;
+       letter-spacing: 10px;
+       /* font-family: "alton sans",; */
       }
+      header h2 .hinc{
+        font-size: 6rem;
+      }
+
       nav {
         margin-left: auto;
-        background-color: rgb(6, 58, 6);
+        background-color: rgb(9, 79, 63);
         padding: 20px;
       }
       nav ul {
@@ -44,10 +63,14 @@
         color: rgb(248, 246, 246);
         padding: 0px;
         font-size: 40px;
+        text-decoration: none;
       }
       nav ul li a:hover {
         color: rgb(138, 11, 11);
-        padding: 0px;
+        padding: 5px 5px;
+        box-shadow: 0 8px 16px rgb(46, 212, 238);
+        background-color: green;
+        border-radius: 20px;
         font-size: 40px;
       }
       .search-container {
@@ -78,6 +101,71 @@
         align-items: center;
         flex-direction: column;
     }
+    #Vegetables{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    #Vegetables h2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color:  rgb(9, 79, 63);
+        color: white;
+        font-size: 50px;
+        padding: 20px;
+        width: 100vw;
+    }
+    #Fruits{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    #Fruits h2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color:  rgb(9, 79, 63);
+        color: white;
+        font-size: 50px;
+        padding: 20px;
+        width: 100vw;
+    }
+    #Meat{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    #Meat h2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color:  rgb(9, 79, 63);
+        color: white;
+        font-size: 50px;
+        padding: 20px;
+        width: 100vw;
+    }
+    #Spices{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    #Spices h2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color:  rgb(9, 79, 63);
+        color: white;
+        font-size: 50px;
+        padding: 20px;
+        width: 100vw;
+    }
+
       .card-container{
       display: flex;
       justify-content: center;
@@ -102,9 +190,94 @@
     .card h3{
         font-size: 40px;
         color: blue;
-        
-
     }
+    .card:hover {
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
+            transform: scale(1.02);
+            transition: all 0.4s ease-in-out;}
+    .card-1{
+        width: 400px;
+        height: 550px;
+        border-radius: 0px 0px 40px 40px;
+        overflow: hidden;
+       border: 1px solid black;
+       text-align: center;
+    }
+    .card-1 img{
+    width: 90%;
+    height: 350px;
+    border-radius:0 0 40px 40px ;
+    }
+    .card-1 p{
+        font-size: 30px;
+    }
+    .card-1 label{
+        font-size: 25px;
+    }
+    .card-1 h3{
+        font-size: 40px;
+        color: black;
+    }
+    .card-1 button{
+        display: flex;
+        margin-left: 140px;
+        color: white;
+        background-color: rgb(9, 79, 63);
+        border-radius: 20px;
+        padding: 10px 20px;
+        font-size:20px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+    .card-1:hover {
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
+            transform: scale(1.02);
+            transition: all 0.4s ease-in-out;}
+
+    .card-1 select{
+        font-size: 20px;
+    }
+
+    footer {
+  position: absolute;
+  /* top: 244vh; */
+  height: 35vh;
+  width: 100%;
+  background-image: url(./footer.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: white;
+}
+footer table {
+  width: 100%;
+  height: 100%;
+  font-size: 25px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.4),
+    rgba(0, 0, 0, 0.6)
+  );
+  font-family: "Anton Sans", sans-serif;
+}
+footer table thead th {
+  color: #ffffff;
+  text-align: center;
+  padding: 34px;
+  font-size: 5rem;
+}
+footer table td,
+.footer table th {
+  vertical-align: middle;
+  text-align: center;
+}
+        
     </style>
   </head>
   <body>
@@ -114,7 +287,7 @@
     <nav>
       <div>
         <ul>
-          <li><a href="">Home</a></li>
+          <li><a href="#Home">Home</a></li>
           <li><a href="">Deals</a></li>
           <li><a href="">About Us</a></li>
           <li><a href="">Ping Us</a></li>
@@ -155,5 +328,286 @@
         </div>
       </div>
     </section>
+
+    <!-- this is vegetable section  -->
+
+    <section id="Vegetables">
+        <div class="card-container">
+            <h2>Vegetables</h2>
+          <!-- this is card 1 -->
+          <div class="card-1">
+            <img src="potatoes.jpg" alt="Potatoes" />
+            <h3>Potatoes</h3>
+            <p>price:<del>40rs</del>20rs/ <b>KG</b></p>
+            <label for="Quantity">qty:</label>
+            <select name="Quantity" id="Quantity">
+                <option value="250gm">250gm</option>
+                <option value="500gm">500gm</option>
+                <option value="1000gm">1KG</option>
+            </select>
+            <button class="card-button">Buy Now</button>
+          </div>
+  
+          <!-- this is card 2 -->
+          <div class="card-1">
+            <img src="onions.jpg" alt="onions" />
+            <h3>Onions</h3>
+            <p>price:<del>50rs</del>25rs/ <b>KG</b></p>
+            <label for="Quantity">qty:</label>
+            <select name="Quantity" id="Quantity">
+                <option value="250gm">250gm</option>
+                <option value="500gm">500gm</option>
+                <option value="1000gm">1KG</option>
+            </select>
+            <button class="card-button">Buy Now</button>
+          </div>
+  
+          <!-- this is card 3 -->
+          <div class="card-1">
+            <img src="tomatoes.jpg" alt="tomatoes" />
+            <h3>Tomatoes</h3>
+            <p>price:<del>30rs</del>10rs/ <b>KG</b></p>
+            <label for="Quantity">qty:</label>
+            <select name="Quantity" id="Quantity">
+                <option value="250gm">250gm</option>
+                <option value="500gm">500gm</option>
+                <option value="1000gm">1KG</option>
+            </select>
+            <button class="card-button">Buy Now</button>
+          </div>
+  
+          <!-- this is card 4 -->
+          <div class="card-1">
+            <img src="carrots.webp" alt="carrots" />
+            <h3>Carrots</h3>
+            <p>price:<del>100rs</del>60rs/ <b>KG</b></p>
+            <label for="Quantity">qty:</label>
+            <select name="Quantity" id="Quantity">
+                <option value="250gm">250gm</option>
+                <option value="500gm">500gm</option>
+                <option value="1000gm">1KG</option>
+            </select>
+            <button class="card-button">Buy Now</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- this is Fruits section  -->
+
+      <section id="Fruits">
+        <div class="card-container">
+            <h2>Fruits</h2>
+          <!-- this is card 1 -->
+          <div class="card-1">
+            <img src="mangoes.webp" alt="Mangoes" />
+            <h3>Mangoes</h3>
+            <p>price:<del>240rs</del>140rs/ <b>KG</b></p>
+            <label for="Quantity">qty:</label>
+            <select name="Quantity" id="Quantity">
+                <option value="250gm">250gm</option>
+                <option value="500gm">500gm</option>
+                <option value="1000gm">1KG</option>
+            </select>
+            <button class="card-button">Buy Now</button>
+          </div>
+  
+          <!-- this is card 2 -->
+          <div class="card-1">
+            <img src="apples.jpeg" alt="apples" />
+            <h3>Apples</h3>
+            <p>price:<del>250rs</del>150rs/ <b>KG</b></p>
+            <label for="Quantity">qty:</label>
+            <select name="Quantity" id="Quantity">
+                <option value="250gm">250gm</option>
+                <option value="500gm">500gm</option>
+                <option value="1000gm">1KG</option>
+            </select>
+            <button class="card-button">Buy Now</button>
+          </div>
+  
+          <!-- this is card 3 -->
+          <div class="card-1">
+            <img src="litchi.jpg" alt="litchi" />
+            <h3>Litchi</h3>
+            <p>price:<del>150rs</del>90rs/ <b>KG</b></p>
+            <label for="Quantity">qty:</label>
+            <select name="Quantity" id="Quantity">
+                <option value="250gm">250gm</option>
+                <option value="500gm">500gm</option>
+                <option value="1000gm">1KG</option>
+            </select>
+            <button class="card-button">Buy Now</button>
+          </div>
+  
+          <!-- this is card 4 -->
+          <div class="card-1">
+            <img src="watermelon.jpg" alt="watermelon" />
+            <h3>Watermelons</h3>
+            <p>price:<del>60rs</del>40rs/ <b>KG</b></p>
+            <label for="Quantity">qty:</label>
+            <select name="Quantity" id="Quantity">
+                <option value="250gm">250gm</option>
+                <option value="500gm">500gm</option>
+                <option value="1000gm">1KG</option>
+            </select>
+            <button class="card-button">Buy Now</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- this is meat section  -->
+
+      <section id="Meat">
+        <div class="card-container">
+            <h2>Meat</h2>
+          <!-- this is card 1 -->
+          <div class="card-1">
+            <img src="desi chicken.jpg" alt="chicken" />
+            <h3>Chicken</h3>
+            <p>price:<del>240rs</del>190rs/ <b>KG</b></p>
+            <label for="Quantity">qty:</label>
+            <select name="Quantity" id="Quantity">
+                <option value="250gm">250gm</option>
+                <option value="500gm">500gm</option>
+                <option value="1000gm">1KG</option>
+            </select>
+            <button class="card-button">Buy Now</button>
+          </div>
+  
+          <!-- this is card 2 -->
+          <div class="card-1">
+            <img src="mutton.webp" alt="mutton" />
+            <h3>Mutton</h3>
+            <p>price:<del>900rs</del>790rs/ <b>KG</b></p>
+            <label for="Quantity">qty:</label>
+            <select name="Quantity" id="Quantity">
+                <option value="250gm">250gm</option>
+                <option value="500gm">500gm</option>
+                <option value="1000gm">1KG</option>
+            </select>
+            <button class="card-button">Buy Now</button>
+          </div>
+  
+          <!-- this is card 3 -->
+          <div class="card-1">
+            <img src="fish.avif" alt="fish" />
+            <h3>Fish</h3>
+            <p>price:<del>250rs</del>220rs/ <b>KG</b></p>
+            <label for="Quantity">qty:</label>
+            <select name="Quantity" id="Quantity">
+                <option value="250gm">250gm</option>
+                <option value="500gm">500gm</option>
+                <option value="1000gm">1KG</option>
+            </select>
+            <button class="card-button">Buy Now</button>
+          </div>
+  
+          <!-- this is card 4 -->
+          <div class="card-1">
+            <img src="duck.jpeg" alt="duck" />
+            <h3>Duck Chicken</h3>
+            <p>price:<del>400rs</del>320rs/ <b>KG</b></p>
+            <label for="Quantity">qty:</label>
+            <select name="Quantity" id="Quantity">
+                <option value="250gm">250gm</option>
+                <option value="500gm">500gm</option>
+                <option value="1000gm">1KG</option>
+            </select>
+            <button class="card-button">Buy Now</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- this is spices scetion  -->
+
+      <section id="Spices">
+        <div class="card-container">
+            <h2>Spices</h2>
+          <!-- this is card 1 -->
+          <div class="card-1">
+            <img src="haldi.webp" alt="haldi" />
+            <h3>Turmeric</h3>
+            <p>price:<del>300rs</del>240rs/ <b>KG</b></p>
+            <label for="Quantity">qty:</label>
+            <select name="Quantity" id="Quantity">
+                <option value="250gm">250gm</option>
+                <option value="500gm">500gm</option>
+                <option value="1000gm">1KG</option>
+            </select>
+            <button class="card-button">Buy Now</button>
+          </div>
+  
+          <!-- this is card 2 -->
+          <div class="card-1">
+            <img src="dhania.jpg" alt="dhania" />
+            <h3>Coriender</h3>
+            <p>price:<del>500rs</del>400rs/ <b>KG</b></p>
+            <label for="Quantity">qty:</label>
+            <select name="Quantity" id="Quantity">
+                <option value="250gm">250gm</option>
+                <option value="500gm">500gm</option>
+                <option value="1000gm">1KG</option>
+            </select>
+            <button class="card-button">Buy Now</button>
+          </div>
+  
+          <!-- this is card 3 -->
+          <div class="card-1">
+            <img src="jeera.png" alt="jeera" />
+            <h3>Cumin</h3>
+            <p>price:<del>800rs</del>600rs/ <b>KG</b></p>
+            <label for="Quantity">qty:</label>
+            <select name="Quantity" id="Quantity">
+                <option value="250gm">250gm</option>
+                <option value="500gm">500gm</option>
+                <option value="1000gm">1KG</option>
+            </select>
+            <button class="card-button">Buy Now</button>
+          </div>
+  
+          <!-- this is card 4 -->
+          <div class="card-1">
+            <img src="red chilli.jpg" alt="red chilli" />
+            <h3>Red Chilli</h3>
+            <p>price:<del>600rs</del>400rs/ <b>KG</b></p>
+            <label for="Quantity">qty:</label>
+            <select name="Quantity" id="Quantity">
+                <option value="250gm">250gm</option>
+                <option value="500gm">500gm</option>
+                <option value="1000gm">1KG</option>
+            </select>
+            <button class="card-button">Buy Now</button>
+          </div>
+        </div>
+      </section>
+      <!-- this is footer  -->
+      <footer>
+        <table>
+           <thead>
+            <tr>
+                <th>Locations</th>
+                <th>Careers </th>
+                <th>Quick Links</th>
+            </tr>
+            </thead>
+           <tbody>
+            <tr>
+                <td>India</td>
+                <td>Became as Delivery Partner</td>
+                <td>FAQ</td>
+            </tr>
+            <tr>
+                <td>USA</td>
+                <td>Became a Seller</td>
+                <td>Help</td>
+            </tr>
+            <tr>
+                <td>London</td>
+                <td>Became a Customer</td>
+                <td>Privacy Policy</td>
+            </tr>
+           </tbody>
+        </table>
+      </footer>
   </body>
 </html>
