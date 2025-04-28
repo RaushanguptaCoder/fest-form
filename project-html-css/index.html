@@ -6,7 +6,12 @@
     <title>Gupta Travels</title>
     <link rel="website icon" type="png" href="icon.png" />
     <style>
+<<<<<<< HEAD
       * {
+=======
+        
+        * {
+>>>>>>> 2e0b956 (updated style & fixed header)
         margin: 0;
         padding: 0px;
         box-sizing: border-box;
@@ -63,8 +68,174 @@
       }
 
       @media (max-width: 768px) {
+<<<<<<< HEAD
         nav ul li a {
             display: none;
+=======
+        nav ul li a {
+            display: none;
+        }
+        
+      }
+      @media (max-width: 450px) {
+        nav ul li a {
+            display: none;
+        }
+        
+      }
+
+      nav ul li a:hover {
+        color: magenta;
+        font-size: 22px;
+      }
+        #Hero {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-image: url("./background.jpg");
+            background-size: cover;
+            height: 100vh;
+            color: olive;
+            text-align: center;
+        }
+
+        #Hero h1 {
+            font-size: 80px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            color: rgb(245, 241, 243);
+        }
+
+        #Hero p {
+            font-size: 35px;
+            margin-bottom: 50px;
+            color: #fbf8f8;
+            font-weight: bold;
+            
+        }
+
+        #Hero a:hover {
+            font-size: 40px;
+            padding: 20px 40px;
+            border: 2px solid #e71313;
+            border-radius: 40px;
+            background-color: rgb(162, 169, 234);
+            color: #f40a83;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        #Hero a {
+            font-size: 20px;
+            padding: 10px 20px;
+            border-radius: 20px;
+            background-color: rgb(23, 42, 205);
+            color: #0fef99;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        #destination{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            background-image: url(./destinations.jpg);
+            background-size: cover;
+        }
+        #destination h2{
+            font-size: 50px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            margin-top: 20px;
+            font-display: block;
+            background-color: rgb(245, 243, 241) ;
+            border-radius: 20%;
+        }
+        #REVIEWS{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            background-image: url(./review.jpg);
+            background-size: cover;
+        }
+       
+        #REVIEWS h2{
+            font-size: 90px;
+            font-weight: bold;
+            color: #fbf8f8;
+            background: url(./grade.webp) center;
+            background-size: cover;
+            background-clip: text;
+            color: transparent;
+        }
+
+        #REVIEWS p{
+            color: white;
+            font-size: 30px;
+        }
+        .card-container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 70px;
+            margin: 50px;
+        }
+        .card {
+            width: 600px;
+            height: 465px;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow:rgba(0,0,0,0.2);
+        }
+        .card p{
+            color: #fbf8f8;
+            font-size: 20px;
+        }
+        .card img{
+            width: 700px;
+            height: 200px;
+            object-fit: cover;
+        }
+        .card h3 {
+            margin: 20px;
+            text-align: center;
+            font-size: 35px;
+        }
+        .card p:hover {
+            margin: 20px;
+            text-align: center;
+            font-size: 20px;
+            transform: scale(.99);
+            transition: all .1s ease-in-out;
+        }
+        .card-button{
+            padding: 10px 20px;
+            border: 2px solid red;
+            border-radius: 40px;
+            background-color:violet;
+            color: #c8e014;
+            font-size: 25px;
+            font-weight: bold;
+            cursor: pointer;
+            outline: none;
+            text-decoration: none;
+            margin-left: 240px;
+        }
+ 
+        
+       .card-button:hover{
+            color: blue;
+        }
+        .card:hover {
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
+            transform: scale(1.02);
+            transition: all 0.4s ease-in-out;
+}
+        hr{
+            width: 100%;
+>>>>>>> 2e0b956 (updated style & fixed header)
         }
         
       }
@@ -202,6 +373,7 @@
   <body>
     <!-- Header Section  -->
     <header>
+<<<<<<< HEAD
       <h2>Gupta Travels</h2>
       <nav>
         <ul>
@@ -224,6 +396,29 @@
         </p>
         <a href="#locations" class="button">Know more</a>
       </div>
+=======
+        <h2>Gupta Travels</h2>
+        <nav>
+            <ul>
+                <li><a href="#Hero">HOME</a></li>
+                <li><a href="#destination">DESTINATIONS</a></li>
+                <li><a href="#REVIEWS">REVIEWS</a></li>
+                <li><a href="">CONTACT</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Hero section -->
+    <section id="Hero">
+        <div class="Container">
+            <h1>Discover the beauty of Nature with Gupta Travels.</h1>
+            <p style="background-color: transparent;">Experience the unexpected moments of Nature. <br>
+                Whether you're looking to explore vibrant cities, relax on pristine beaches,<br>
+                or immerse yourself in
+                cultural landmarks, we've got you covered.
+            </p>
+            <a href="" class="button">Know more</a>
+        </div>
+>>>>>>> 2e0b956 (updated style & fixed header)
     </section>
     <hr />
     <!-- destination area  -->
@@ -232,6 +427,7 @@
       <div class="card-container">
         <!-- card-1  -->
 
+<<<<<<< HEAD
         <div class="card">
           <img src="./aquatic.jpg" alt="Aquatic World" />
           <h3>Aquatic World</h3>
@@ -240,6 +436,167 @@
             worlds, whether through snorkeling, diving, or aquarium visits.
           </p>
           <button class="card-button"><a href="form.html">Book Now</a></button>
+=======
+            <div class="card">
+                <img src="./aquatic.avif" alt="Aquatic World">
+                <h3>Aquatic World</h3>
+                <p>Aquatic tours offer unique opportunities to explore underwater worlds, whether through snorkeling,
+                    diving, or aquarium visits. </p>
+              <button class="card-button"> <a href="form.html">Book Now</a></button> 
+            </div>
+
+            <!-- card-2  -->
+            <div class="card">
+                <img src="./desert.jpg" alt="Desert">
+                <h3>Desert</h3>
+                <p>Deserts are arid environments with little rainfall, characterized by sand or rocks. They cover a
+                    significant portion of the Earth's land surface and present challenging conditions for life </p>
+                <button class="card-button"><a href="form.html">Book Now</a></button>
+            </div>
+            <!-- card-3  -->
+            <div class="card">
+                <img src="./diving.jpg" alt="Scuba Diving">
+                <h3>Scuba Diving</h3>
+                <p>Scuba diving tours offer a chance to explore underwater ecosystems and marine life while utilizing
+                    self-contained breathing apparatus. </p>
+                <button class="card-button"><a href="form.html">Book Now</a></button>
+            </div>
+            <!-- card-4  -->
+            <div class="card">
+                <img src="./everest.jpg" alt="Mount Everest">
+                <h3>Mount Everest</h3>
+                <p>Mount Everest, also known as Himalayas. It's a popular destination for climbers, but also attracts
+                    trekkers and tourists who come to experience its stunning views. </p>
+                <button class="card-button"><a href="form.html">Book Now</a></button>
+            </div>
+            <!-- card-5  -->
+            <div class="card">
+                <img src="./wildlife.jpg" alt="wildlife">
+                <h3>Wildlife Parks</h3>
+                <p>India boasts numerous wildlife parks popular for tours, offering diverse experiences and wildlife
+                    sightings. Prominent destinations include Ranthambore, Jim Corbett, Kanha, and Kaziranga National
+                    Parks </p>
+                <button class="card-button"><a href="form.html">Book Now</a></button>
+            </div>
+            <!-- card-6  -->
+            <div class="card">
+                <img src="./forest.jpg" alt="forest">
+                <h3>Forest</h3>
+                <p>Forests offer a variety of experiences for tourism, from wildlife viewing and hiking to cultural
+                    exploration and eco-tourism </p>
+                <button class="card-button"><a href="form.html">Book Now</a></button>
+            </div>
+            <!-- card-7  -->
+            <div class="card">
+                <img src="./waterfalls.jpg" alt="waterfalls">
+                <h3>Water falls</h3>
+                <p>For a waterfall tour, consider visiting Kunchikal Falls in Karnataka, the tallest waterfall in India,
+                    or Nohkalikai Falls in Meghalaya, the tallest plunge waterfall. </p>
+                <button class="card-button"><a href="form.html">Book Now</a></button>
+            </div>
+            <!-- card-8  -->
+            <div class="card">
+                <img src="./ocean.jpg" alt="oceans">
+                <h3>Oceans</h3>
+                <p>The ocean, a vast and complex ecosystem, covers about 70% of the Earth's surface and contains 97% of
+                    its water. </p>
+                <button class="card-button"><a href="form.html">Book Now</a></button>
+            </div>
+            <!-- card-9  -->
+            <div class="card">
+                <img src="./island.webp" alt="AIslands">
+                <h3>Islands</h3>
+                <p>Islands offer a diverse range of travel experiences,Popular island destinations include the Maldives,
+                    Hawaii, Mauritius, the Philippines, and various islands within Indonesia, Thailand, and India. </p>
+               <button class="card-button"><a href="form.html">Book Now</a></button>
+            </div>
+            <!-- card-10  -->
+            <div class="card">
+                <img src="./mountains.jpg" alt="Mountains">
+                <h3>Mountains</h3>
+                <p>Mountains offer diverse and breathtaking landscapes, perfect for various tour types. They range from
+                    towering peaks suitable for trekking and climbing to gentle slopes ideal for hiking and scenic
+                    drives. </p>
+              <button class="card-button"><a href="form.html">Book Now</a></button>
+            </div>
+        </div>
+    </section>
+    <section id="REVIEWS">
+         <h2> REVIEWS</h2>
+        <div class="card-container">
+            <div class="card">
+                <img src="./aquatic.avif" alt="Aquatic World">
+                <h3>Aquatic World</h3>
+                <p>Aquatic tours offer unique opportunities to explore underwater worlds, whether through snorkeling,
+                    diving, or aquarium visits. </p>
+            </div>
+
+            <!-- card-2  -->
+            <div class="card">
+                <img src="./desert.jpg" alt="Desert">
+                <h3>Desert</h3>
+                <p>Deserts are arid environments with little rainfall, characterized by sand or rocks. They cover a
+                    significant portion of the Earth's land surface and present challenging conditions for life </p>
+            </div>
+            <!-- card-3  -->
+            <div class="card">
+                <img src="./diving.jpg" alt="Scuba Diving">
+                <h3>Scuba Diving</h3>
+                <p>Scuba diving tours offer a chance to explore underwater ecosystems and marine life while utilizing
+                    self-contained breathing apparatus. </p>
+            </div>
+            <!-- card-4  -->
+            <div class="card">
+                <img src="./everest.jpg" alt="Mount Everest">
+                <h3>Mount Everest</h3>
+                <p>Mount Everest, also known as Himalayas. It's a popular destination for climbers, but also attracts
+                    trekkers and tourists who come to experience its stunning views. </p>
+            </div>
+            <!-- card-5  -->
+            <div class="card">
+                <img src="./wildlife.jpg" alt="wildlife">
+                <h3>Wildlife Parks</h3>
+                <p>India boasts numerous wildlife parks popular for tours, offering diverse experiences and wildlife
+                    sightings. Prominent destinations include Ranthambore, Jim Corbett, Kanha, and Kaziranga National
+                    Parks </p>
+            </div>
+            <!-- card-6  -->
+            <div class="card">
+                <img src="./forest.jpg" alt="forest">
+                <h3>Forest</h3>
+                <p>Forests offer a variety of experiences for tourism, from wildlife viewing and hiking to cultural
+                    exploration and eco-tourism </p>
+            </div>
+            <!-- card-7  -->
+            <div class="card">
+                <img src="./waterfalls.jpg" alt="waterfalls">
+                <h3>Water falls</h3>
+                <p>For a waterfall tour, consider visiting Kunchikal Falls in Karnataka, the tallest waterfall in India,
+                    or Nohkalikai Falls in Meghalaya, the tallest plunge waterfall. </p>
+            </div>
+            <!-- card-8  -->
+            <div class="card">
+                <img src="./ocean.jpg" alt="oceans">
+                <h3>Oceans</h3>
+                <p>The ocean, a vast and complex ecosystem, covers about 70% of the Earth's surface and contains 97% of
+                    its water. </p>
+            </div>
+            <!-- card-9  -->
+            <div class="card">
+                <img src="./island.webp" alt="AIslands">
+                <h3>Islands</h3>
+                <p>Islands offer a diverse range of travel experiences,Popular island destinations include the Maldives,
+                    Hawaii, Mauritius, the Philippines, and various islands within Indonesia, Thailand, and India. </p>
+            </div>
+            <!-- card-10  -->
+            <div class="card">
+                <img src="./mountains.jpg" alt="Mountains">
+                <h3>Mountains</h3>
+                <p>Mountains offer diverse and breathtaking landscapes, perfect for various tour types. They range from
+                    towering peaks suitable for trekking and climbing to gentle slopes ideal for hiking and scenic
+                    drives. </p>
+            </div>
+>>>>>>> 2e0b956 (updated style & fixed header)
         </div>
 
         <!-- card-2  -->

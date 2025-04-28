@@ -14,7 +14,7 @@
         }
 
         body {
-            background: url('travel.webp') no-repeat center center/cover;
+            background: url('background.jpg') no-repeat center center/cover;
             background-attachment: fixed;
             color: white;
         }
@@ -70,10 +70,7 @@
             color: rgb(251, 3, 197);
             font-size: 50px;
         }
-
-        /* section {
-            background-image: url("./travel.webp");
-        } */
+       
 
         section h2 {
             color: rgb(11, 11, 11);
@@ -130,7 +127,22 @@
         input::placeholder {
             color: rgb(61, 67, 61);
         }
+         
+        .card-container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow:(beige);
+            box-sizing: content-box;
+        }
 
+        .card{
+            width: auto;
+            height: auto;
+            border-radius: 10px;
+            overflow: hidden;
+           
+        }
         #booknow {
             background: linear-gradient(to right, magenta, blue);
             color: black;
@@ -170,69 +182,73 @@
         </nav>
     </header>
     <main>
-        <section class="form-section" aria-labelledby="bookingFormTitle">
-            <h2 id="bookingFormTitle"> Booking Form</h2>
-            <form action="#" method="post" aria-labelledby="formDescription">
-                <p id="formDescription" style="margin-bottom:25px ;"> Provide Your details to go through Booking process.</p>
-
-                <label for="name">Name :</label>
-                <input type="text" id="name" name="name" placeholder="Enter Your Name" aria-label="name">
-
-                <label for="email"> E-mail :</label>
-                <input type="email" name="email" id="email" placeholder="Enter your email" aria-label="email">
-
-                <label for="mobile"> Mobile-Number :</label>
-                <input type="number" name="number" id="Mobile" placeholder="ENter your mobile number" aria-label="number">
-                
-                <label for="date"> Date :</label>
-                <input type="date" name="date" id="date" placeholder="Enter the date" aria-label="date">
-
-                <label for="destination"> Destination :</label>
-                <select name="destination" id="destination" aria-placeholder="choose your area" aria-label="destination">
-                    <option value="">Choose Destination </option>
-                    <option value="aquatic"> Aquatic</option>
-                    <option value="desert"> Desert</option>
-                    <option value="diving"> Scuba Diving</option>
-                    <option value="everest"> Mount Everest</option>
-                    <option value="forest"> Forest</option>
-                    <option value="island"> island</option>
-                    <option value="mountains"> Mountains</option>
-                    <option value="ocean"> Ocean</option>
-                    <option value="wildlife"> Wildlife</option>
-                    <option value="waterfalls"> waterfalls</option>
-                </select>
-
-                <label for="People"> Number of People</label>
-                <input type="number" name="People" id="People" aria-placeholder="enter number of person" placeholder="Number of Persons" min="1"
-                    max="20">
-
-                <label for="Food"> Food :</label>
-                <select name="Food" id="Food" aria-placeholder="Select your food type" aria-label="food">
-                    <option value=""> Choose food </option>
-                    <option value="Vegetarian">Vegetarian</option>
-                    <option value="Non-Veg"> Non-vegetarian </option>
-                    <option value="Vegan"> Vegan </option>
-                </select>
-
-                <label for="drinks"> Drinks :</label>
-                <select name="drinks" id="drinks" aria-placeholder="select your drink "aria-label=" drinks">
-                    <option value=""> Choose drink </option>
-                    <option value="Alcoholic"> Alcoholic </option>
-                    <option value="non-alcoholic"> Non-Alcoholic</option>
-                </select>
-
-                <label for="payment"> Payment :</label>
-                <select name="payment" id="payment" aria-placeholder="select your payment mode" aria-label="payment">
-                    <option value="">Select payment type</option>
-                    <option value="cash">cash</option>
-                    <option value="UPI">UPI</option>
-                    <option value="credit/debit card">Credit/Debit Card</option>
-                    <option value="netbanking">Netbanking</option>
-                </select>
-
-                <input id="booknow" type="submit" value="Book Now" aria-label="Booking Now">
-            </form>
-        </section>
+      <div class="class-container">
+        <div class="card">
+            <section class="form-section" aria-labelledby="bookingFormTitle">
+                <h2 id="bookingFormTitle"> Booking Form</h2>
+                <form action="#" method="post" aria-labelledby="formDescription">
+                    <p id="formDescription" style="margin-bottom:25px ;"> Provide Your details to go through Booking process.</p>
+    
+                    <label for="name">Name :</label>
+                    <input type="text" id="name" name="name" placeholder="Enter Your Name" aria-label="name">
+    
+                    <label for="email"> E-mail :</label>
+                    <input type="email" name="email" id="email" placeholder="Enter your email" aria-label="email">
+    
+                    <label for="mobile"> Mobile-Number :</label>
+                    <input type="number" name="number" id="Mobile" placeholder="ENter your mobile number" aria-label="number">
+                    
+                    <label for="date"> Date :</label>
+                    <input type="date" name="date" id="date" placeholder="Enter the date" aria-label="date">
+    
+                    <label for="destination"> Destination :</label>
+                    <select name="destination" id="destination" aria-placeholder="choose your area" aria-label="destination">
+                        <option value="">Choose Destination </option>
+                        <option value="aquatic"> Aquatic</option>
+                        <option value="desert"> Desert</option>
+                        <option value="diving"> Scuba Diving</option>
+                        <option value="everest"> Mount Everest</option>
+                        <option value="forest"> Forest</option>
+                        <option value="island"> island</option>
+                        <option value="mountains"> Mountains</option>
+                        <option value="ocean"> Ocean</option>
+                        <option value="wildlife"> Wildlife</option>
+                        <option value="waterfalls"> waterfalls</option>
+                    </select>
+    
+                    <label for="People"> Number of People</label>
+                    <input type="number" name="People" id="People" aria-placeholder="enter number of person" placeholder="Number of Persons" min="1"
+                        max="20">
+    
+                    <label for="Food"> Food :</label>
+                    <select name="Food" id="Food" aria-placeholder="Select your food type" aria-label="food">
+                        <option value=""> Choose food </option>
+                        <option value="Vegetarian">Vegetarian</option>
+                        <option value="Non-Veg"> Non-vegetarian </option>
+                        <option value="Vegan"> Vegan </option>
+                    </select>
+    
+                    <label for="drinks"> Drinks :</label>
+                    <select name="drinks" id="drinks" aria-placeholder="select your drink "aria-label=" drinks">
+                        <option value=""> Choose drink </option>
+                        <option value="Alcoholic"> Alcoholic </option>
+                        <option value="non-alcoholic"> Non-Alcoholic</option>
+                    </select>
+    
+                    <label for="payment"> Payment :</label>
+                    <select name="payment" id="payment" aria-placeholder="select your payment mode" aria-label="payment">
+                        <option value="">Select payment type</option>
+                        <option value="cash">cash</option>
+                        <option value="UPI">UPI</option>
+                        <option value="credit/debit card">Credit/Debit Card</option>
+                        <option value="netbanking">Netbanking</option>
+                    </select>
+    
+                    <input id="booknow" type="submit" value="Book Now" aria-label="Booking Now">
+                </form>
+            </section>
+           </div>
+      </div>
     </main>
 </body>
 
