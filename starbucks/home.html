@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+        }
+        .navbar{
+            background-color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 5px;
+        }
+        .navbar ul {
+            list-style: none;
+            display: flex;
+            align-items: center;
+        }   
+        .navbar ul li {
+            margin: 0 40px;
+            font-size: 25px;
+            color: #333;
+        }
+        .navbar ul li:hover {
+            color:  rgb(9, 79, 63);
+            font-weight: bold;
+            cursor: pointer;
+            border-bottom: 5px solid rgb(9, 79, 63);
+        }
+        .navbar ul li img {
+            width: 80px;
+            height: 80px;
+            margin-left: 120px;
+            cursor: pointer;
+        }
+        .search-container {
+            display: flex;
+            align-items: flex-end;
+            justify-content: flex-end;
+            border: black solid 1px;
+            background-color: white;
+            border-radius: 40px;
+            padding: none;
+            width: 450px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            margin-left: 500px;
+        }
+        .search-input {
+            padding: 12px;
+            color: black;       
+            border: none;
+            outline: none;
+            border-radius:35px;
+            width: 320px;
+            margin-left: 10px;
+            margin-right: auto;
+            font-size: 20px;
+        }
+        .search-button {
+            background-color: transparent;
+            color: white;
+            border: none;
+            padding: 15px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .search-button img {
+            width: 25px;
+            height: 25px;
+            cursor: pointer;
+        }
+        .login {
+            background-color: transparent;
+            border: none;
+        }
+        .login img {
+            width: 50px;
+            height: 50px;
+            padding: none;
+            margin-top: 10px;
+            margin-left: 20px;
+            margin-right: 20px;
+            cursor: pointer;
+        }
+    .navbar2{
+        background-color: rgb(22, 48, 42);
+        display: flex;
+        align-items: center;
+        padding: 40px;
+        justify-content: space-between;  
+    } 
+    .navbar2 h3 {
+        font-size: 30px;
+        margin-left: 100px;
+        color: white;
+        font-weight: lighter;
+        cursor: pointer;
+    }
+    .button{
+        background-color: rgb(22, 48, 42);
+        color: white;
+        font-size: 30px;
+        border-radius: 50px;
+        border-color: #f5f5f5;
+        width: 180px;
+        height: 50px;
+        margin-right: 14 0px;
+        cursor: pointer;
+    }
+    .container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 50px;
+    }  
+    .slider{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    } 
+    .slides {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        flex-direction: column;
+    }
+       
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+    <span>
+        <ul>
+        <li><img src="./starbucks.main.png" alt=""></li>
+        <li aria-placeholder="Home">Home</li>
+        <li aria-placeholder="Gift">Gift</li>
+        <li aria-placeholder="Order">Order</li>
+        <li aria-placeholder="Pay">Pay</li>
+        <li aria-placeholder="Store">Store</li>
+        <div class="search-container">
+            <button class="search-button" aria-placeholder="search" type="button"> <img src="./search-icon.png" alt=""></button>
+            <input type="text" class="search-input" placeholder="Looking for something Specific ?" aria-label="search" aria-placeholder="search">
+        </div>
+        <div class="login">
+            <li aria-placeholder="login"> <img src="./login icon.png" alt=""></li>
+        </div>
+        </ul>
+    </span>
+    </nav>
+    <div class="navbar2">
+        <h3>Starbucks Reward</h3>
+        <button class="button" aria-placeholder="Know More">Know More</button>
+    </div>
+
+    <section class="container">
+        <div class="slider">
+            <div class="slides">
+                <a href=""><img id="slide1" src="./offer1.png" alt=""></a>
+               <a href=""> <img id="slide2" src="./offer2.png" alt=""></a>
+                <a href=""><img id="" src="./offer3.png" alt=""></a>
+            </div>
+        </div>
+    </section>
+    <section id="Handcrafted Curations">
+        <div class="card-container">
+            <h2>Handcrafted Curations</h2>
+            <div class="card-1">
+                <img src="./best seller.jpg" alt="">
+                <h3>Best Seller</h3>
+                
+            </div>
+            <div class="card-2">
+                <img src="./drinks.jpeg" alt="">
+                <h3>Drinks</h3>
+            </div>
+            
+            <div class="card-3">
+                <img src="./foods.jpeg" alt="">
+                <h3>Food</h3>
+            </div>
+
+            <div class="card-4">
+                <img src="./marchandise.jpeg" alt="">
+                <h3>Merchandise</h3>
+            </div>
+
+            <div class="card-5">
+                <img src="./coffe at home.webp" alt="">
+                <h3>Coffee at Home </h3>      
+            </div>
+            <div class="class-6">
+                <img src="./ready to eat.webp" alt="">
+                <h3>Ready to Eat</h3>
+            </div>
+        </div>
+
+    </section>
+</html>

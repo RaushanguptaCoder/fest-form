@@ -180,6 +180,9 @@
             flex-wrap: wrap;
             gap: 70px;
             margin: 50px;
+
+
+
         }
         .card {
             width: 600px;
@@ -234,7 +237,45 @@
             width: 100%;
         }
         
+        footer {
+  position: absolute;
+  /* top: 244vh; */
+  height: 35vh;
+  width: 100%;
+  background-image: url(./grade.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
+  color: white;
+}
+footer table {
+  width: 100%;
+  height: 100%;
+  font-size: 25px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.4),
+    rgba(0, 0, 0, 0.6)
+  );
+  font-family: "Anton Sans", sans-serif;
+}
+footer table thead th {
+  color: #ffffff;
+  text-align: center;
+  padding: 34px;
+  font-size: 5rem;
+}
+footer table td,
+.footer table th {
+  vertical-align: middle;
+  text-align: center;
+}
     </style>
 </head>
 
@@ -433,8 +474,33 @@
         </div>
 
     </section>
- <footer>
-    <h3></h3>
- </footer>
+    <footer>
+        <table>
+           <thead>
+            <tr>
+                <th>Locations</th>
+                <th>Careers </th>
+                <th>Quick Links</th>
+            </tr>
+            </thead>
+           <tbody>
+            <tr>
+                <td>India</td>
+                <td>Became as Delivery Partner</td>
+                <td>FAQ</td>
+            </tr>
+            <tr>
+                <td>USA</td>
+                <td>Became a Seller</td>
+                <td>Help</td>
+            </tr>
+            <tr>
+                <td>London</td>
+                <td>Became a Customer</td>
+                <td>Privacy Policy</td>
+            </tr>
+           </tbody>
+        </table>
+      </footer>
 </body>
 </html>

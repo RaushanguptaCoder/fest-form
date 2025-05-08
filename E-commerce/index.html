@@ -14,6 +14,7 @@
         height: 100vh;
         width: 100%;
       }
+
       header {
         display: flex;
         align-items: center;
@@ -26,25 +27,24 @@
         position: relative;
       }
       Header h2 {
-       display: flex;
-       justify-content: center;
-       align-items: center;
-       position: absolute;
-       font-size: 6rem;
-       text-transform: uppercase;
-       background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4),
-       rgba(0, 0, 0, 0.6));
-       width: 100%;
-       height: 100%;
-       font-weight: 900;
-       color: white;
-       letter-spacing: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        font-size: 6rem;
+        text-transform: uppercase;
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4),
+        rgba(0, 0, 0, 0.6));
+        width: 100%;
+        height: 100%;
+        font-weight: 900;
+        color: white;
+        letter-spacing: 10px;
        /* font-family: "alton sans",; */
       }
       header h2 .hinc{
         font-size: 6rem;
       }
-
       nav {
         margin-left: auto;
         background-color: rgb(9, 79, 63);
@@ -182,8 +182,8 @@
         height: 550px;
         border-radius: 0px 0px 40px 40px;
         overflow: hidden;
-       border: 1px solid black;
-       text-align: center;
+        border: 1px solid black;
+        text-align: center;
     }
     .card img{
     width: 90%;
@@ -203,8 +203,8 @@
         height: 550px;
         border-radius: 0px 0px 40px 40px;
         overflow: hidden;
-       border: 1px solid black;
-       text-align: center;
+        border: 1px solid black;
+        text-align: center;
     }
     .card-1 img{
     width: 90%;
@@ -229,13 +229,18 @@
         border-radius: 20px;
         padding: 10px 20px;
         font-size:20px;
-        font-weight: bold;
+        font-weight: bold; 
         cursor: pointer;
+    }
+    .card-1 button:hover{
+      transform: scale(1.02);
+      transition: 2s;
+      color:  red;
     }
     .card-1:hover {
             box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
             transform: scale(1.02);
-            transition: all 0.4s ease-in-out;}
+            transition: 2s;}
 
     .card-1 select{
         font-size: 20px;
@@ -280,7 +285,11 @@ footer table td,
   vertical-align: middle;
   text-align: center;
 }
-        
+@media (max-width: 768px) {
+  header, nav, section, footer {
+   flex: 1 1 100%;
+  }
+}
     </style>
   </head>
   <body>
