@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Github finder</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        #avatar{
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+        }
+        .body{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(to right, #00c6ff,white, #cdf007);
+        }
+        .user-card{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+            background: linear-gradient(to right, #00c6ff,white, #cdf007);
+            /* background-color: blue; */
+            width: 300px;
+            padding: 0px 20px;
+            border-radius: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container"></div>
+<h1>Github username Finder</h1>
+<input type="text" id="username" placeholder="github username" name="username">
+<button onclick="getUser()">Search</button>
+<div class="user-card" id="user-card">
+    <img src="" alt="" id="avatar">
+    <h2 id="name"></h2>
+    <p id="bio"></p>
+    <p id="location"></p>
+    <p id="repos"></p>
+    <p id="followers"></p>
+    <p id="following"></p>
+    <p id="company"></p>
+    
+</div>
+    <script>
+       async  function getUser() {
+           let username = document.getElementById("username").value;
+
+           if (username === "") {
+            alert("please enter a username");
+           }
+           try{
+            const response = await fetch(`https://api.github.com/users/${username}`);
+            if (!response.ok){
+                throw new Error("user not found");
+            }
+            const data = await response.json();
+            console.log(data);
+            document.getElementById("avatar").src = data.avatar_url;
+            document.getElementById("name").innerText = data.name;
+            document.getElementById("bio").innerText = data.bio;
+            document.getElementById("location").innerText = data.location;
+            document.getElementById("repos").innerText = data.public_repos;
+            document.getElementById("followers").innerText = data.followers;
+            document.getElementById("following").innerText = data.following;
+            document.getElementById("company").innerText = data.company;
+           } catch (error) {
+            console.log(error);
+           }
+        }
+    </script>
+</body>
+</html>
