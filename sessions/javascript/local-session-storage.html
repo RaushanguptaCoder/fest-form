@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Local and Session storage</title>
+  </head>
+  <body>
+    <h1>Local and Session storage</h1>
+
+    <script>
+      let obj1 = {
+        name: "raushan",
+        age: "24",
+        ismarried: "no",
+        city: "Bhagalpur",
+      };
+
+      localStorage.setItem("obj1", JSON.stringify(obj1));
+      localStorage.setItem("name", JSON.stringify(obj1.name));
+      localStorage.setItem("age", JSON.stringify(obj1.age));
+      localStorage.setItem("ismarried", JSON.stringify(obj1.ismarried));
+      localStorage.setItem("city", JSON.stringify(obj1.city));
+
+      //    sessionStorage.setItem("obj1",JSON.stringify(obj1));
+    </script>
+  </body>
+</html>

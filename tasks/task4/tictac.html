@@ -4,69 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tic Tac</title>
-    <style>
-      .container {
-        background-color: rgb(236, 105, 105);
-        height: 370px;
-        width: 370x;
-        display: flex;
-        justify-content: center;
-        border-radius: 25px;
-        position: relative;
-        top: 10px;
-        padding: 10px;
-      }
-      .box-area {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        justify-content: center;
-        align-items: center;
-        gap: 10px;
-      }
-      .box {
-        height: 100px;
-        width: 100px;
-        border: 5px solid black;
-        background-color: orange;
-      }
-
-      .crossarea {
-        height: 100px;
-        width: 100px;
-        border: 5px solid black;
-        background-color: rgba(127, 88, 15, 0.653);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-      .crossarea::after {
-        font-size: 4rem;
-        content: "X";
-      }
-      .oarea {
-        height: 100px;
-        width: 100px;
-        border: 5px solid black;
-        background-color: rgb(229, 245, 7);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-      .oarea::after {
-        font-size: 4rem;
-        color: black;
-        content: "O";
-      }
-      .current {
-      
-        display: flex;
-        justify-content: center;
-        font-size: 3rem;
-        background: linear-gradient(220deg, #ee4305,#bf949c,#c806dd,rgb(7, 7, 157));
-        color: white;
-        border-radius: 25px;
-      }
-    </style>
+    <link rel="stylesheet" href="./style.css">
   </head>
   <body>
     <div class="current">
@@ -86,77 +24,6 @@
       </div>
     </div>
 
-    <script>
-      const current = document.querySelector(".currentp");
-      const container = document.querySelector(".container");
-      const box1 = document.querySelector(".box-1");
-      const box2 = document.querySelector(".box-2");
-      const box3 = document.querySelector(".box-3");
-      const box4 = document.querySelector(".box-4");
-      const box5 = document.querySelector(".box-5");
-      const box6 = document.querySelector(".box-6");
-      const box7 = document.querySelector(".box-7");
-      const box8 = document.querySelector(".box-8");
-      const box9 = document.querySelector(".box-9");
-
-      let currentPlayer = "X"; // Start with "X"
-      const board = Array(9).fill(null); // Represent the board as an array
-
-      const winarr = [
-        [0, 1, 2],
-        [3, 4, 5],
-        [6, 7, 8], // Rows
-        [0, 3, 6],
-        [1, 4, 7],
-        [2, 5, 8], // Columns
-        [0, 4, 8],
-        [2, 4, 6], // Diagonals
-      ];
-
-      container.addEventListener("click", (event) => {
-        const targetElement = event.target;
-        const index = Array.from(container.querySelectorAll(".box")).indexOf(
-          targetElement
-        );
-
-        if (targetElement.classList.contains("box") && !board[index]) {
-          // Mark the box
-          board[index] = currentPlayer;
-          targetElement.classList.add(
-            currentPlayer === "X" ? "crossarea" : "oarea"
-          );
-          current.textContent = `Current Player is ${
-            currentPlayer === "X" ? "O" : "X"
-          }`;
-
-          // Check for win or draw
-          if (checkWin()) {
-            alert(`${currentPlayer} wins!`);
-            resetGame();
-          } else if (board.every((cell) => cell)) {
-            alert("It's a draw!");
-            resetGame();
-          } else {
-            // Switch player
-            currentPlayer = currentPlayer === "X" ? "O" : "X";
-          }
-        }
-      });
-
-      function checkWin() {
-        return winarr.some((pattern) =>
-          pattern.every((index) => board[index] === currentPlayer)
-        );
-      }
-
-      function resetGame() {
-        board.fill(null);
-        Array.from(container.querySelectorAll(".box")).forEach((box) => {
-          box.className = "box"; // Reset all boxes
-        });
-        currentPlayer = "X"; // Reset to player X
-        current.textContent = `Current Player is ${currentPlayer}`;
-      }
-    </script>
+   <script src="./script.js"></script>
   </body>
 </html>

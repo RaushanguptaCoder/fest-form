@@ -4,37 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        *{
-            margin: 0px;
-            padding: 0px;
-            box-sizing: border-box;
-        }
-        .container{
-            display: flex;
-            flex-direction: row;
-            align-items: flex-start;
-            justify-content: space-evenly;
-            position: relative;
-            background-color:white;
-        }
-        .shape{
-            width: 50px;
-            height: 50px;
-            margin: 10px;
-            padding: 10px;
-        }
-        .work-area{
-            display: flex;
-            flex-flow: row wrap;
-            align-items: flex-start;
-            justify-content: flex-start;
-            background: linear-gradient(to right, #00c6ff,white, #cdf007);
-            position: relative;
-            top: 50px;
-        }
-
-    </style>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
     <div class="container">
@@ -51,25 +21,6 @@
 
     </div>
 
-    <script>
-        function generateshapes(){
-            let workarea = document.querySelector(".work-area");
-            let number = document.getElementById("number").value;
-            let shape = document.getElementById("shape").value;
-            let color = document.getElementById("shapecolor").value;
-            let container = document.querySelector(".container");
-        
-            for (let i = 0; i < Math.round(number); i++){
-                let shapeElement = document.createElement("div");
-                shapeElement.classList.add("shape");
-                shapeElement.style.backgroundColor = color;
-                if (shape === "circle"){
-                    shapeElement.style.borderRadius = "50%";
-                }
-                workarea.appendChild(shapeElement);
-            }
-        }
-
-    </script>
+    <script src="./script.js"></script>
 </body>
 </html>
