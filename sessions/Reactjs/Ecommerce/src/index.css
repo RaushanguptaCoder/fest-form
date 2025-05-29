@@ -1,0 +1,76 @@
+@import "tailwindcss";
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(231, 10, 10, 0.87);
+  background-color: #266065;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+.container {
+  height: 10vh;
+  width: 100%;
+  background-color: blueviolet;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+
+}
+.heading{
+  color: rgb(238, 238, 7);
+  position: relative;
+  left: 1vw;
+  font-weight:bold ;
+  font-size: 50px;
+
+}
+.heading:hover{
+    color: yellowgreen;
+    cursor: pointer;
+  }
+.nav-items{
+  position: relative;
+  right: 1vw;
+}
+.nav-items .links{
+  margin-left: 2vw;
+  font-size: 1.1rem;
+  text-decoration: none;
+  color: beige;
+}
+
+.nav-items .links:hover{
+  color: red;
+}
+button {
+  padding: 10px;
+  margin:20px;
+  cursor: pointer;
+  color: black;
+  font-style: italic;
+  font-weight: bold;
+  box-shadow: 0px 0px 20px rgba(19, 192, 240, 0.4);
+  border-radius: 10px;
+  background-color:rgb(249, 237, 2);
+  font-size: 20px;
+}
+img{
+  height: 350px;
+  width: 300px;
+  border-radius: 10px;
+}
+
