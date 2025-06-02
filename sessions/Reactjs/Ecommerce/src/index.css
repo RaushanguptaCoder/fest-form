@@ -44,11 +44,11 @@
   }
 .nav-items{
   position: relative;
-  right: 1vw;
+  right: 40vw;
 }
 .nav-items .links{
   margin-left: 2vw;
-  font-size: 1.1rem;
+  font-size: 1.5rem;
   text-decoration: none;
   color: beige;
 }
@@ -68,9 +68,9 @@ button {
   background-color:rgb(249, 237, 2);
   font-size: 20px;
 }
-img{
-  height: 350px;
-  width: 300px;
-  border-radius: 10px;
+
+.card{
+  height: 60vh;
+  width: 20vw;
 }
 

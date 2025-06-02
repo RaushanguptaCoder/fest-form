@@ -11,6 +11,7 @@ const Nav = () => {
             <a href="#" className="links">Reviews</a>
             <a href="#" className="links">FAQ</a>
         </div>
+        
     </div>
     </>
   )
