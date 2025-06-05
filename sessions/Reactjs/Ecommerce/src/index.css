@@ -5,8 +5,8 @@
   font-weight: 400;
 
   color-scheme: light dark;
-  color: rgba(231, 10, 10, 0.87);
-  background-color: #266065;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -18,59 +18,74 @@
   padding: 0px;
   margin: 0px;
   box-sizing: border-box;
-  border-radius: 10px;
 }
 .container {
   height: 10vh;
-  width: 100%;
+  width: 100vw;
+  background-color: rgb(128, 17, 231);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+.nav-container {
+  height: 10vh;
+  width: 100vw;
   background-color: blueviolet;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 10px;
-
 }
-.heading{
-  color: rgb(238, 238, 7);
+.heading {
+  color: beige;
   position: relative;
   left: 1vw;
-  font-weight:bold ;
-  font-size: 50px;
-
+  font-size: 3rem;
 }
-.heading:hover{
-    color: yellowgreen;
-    cursor: pointer;
-  }
-.nav-items{
+.heading:hover {
+  color: yellowgreen;
+}
+.nav-items {
   position: relative;
-  right: 40vw;
+  left: -65px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 }
-.nav-items .links{
-  margin-left: 2vw;
-  font-size: 1.5rem;
+.nav-items .links {
+  padding-left: 2rem;
+  font-size: 1.1rem;
   text-decoration: none;
   color: beige;
 }
 
-.nav-items .links:hover{
+.nav-items .links:hover {
   color: red;
 }
 button {
-  padding: 10px;
-  margin:20px;
-  cursor: pointer;
+  padding: 20px;
+  position: relative;
+  top: -27px;
   color: black;
-  font-style: italic;
-  font-weight: bold;
-  box-shadow: 0px 0px 20px rgba(19, 192, 240, 0.4);
-  border-radius: 10px;
-  background-color:rgb(249, 237, 2);
-  font-size: 20px;
+  font-size: 1.2rem;
+  font-weight: bolder;
+  background-color: violet;
 }
-
-.card{
-  height: 60vh;
-  width: 20vw;
+.user{
+  padding-left: 10px;
 }
-
+.cart{
+  padding-left: 10px;
+}
+.links{
+  cursor: pointer;
+}
+.Login-cart {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: relative;
+  left: -20px;
+}
