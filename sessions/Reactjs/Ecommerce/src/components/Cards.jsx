@@ -8,21 +8,34 @@ const Card = ({ productObj }) => {
     };
  return (
  <>
-      <div className="card flex flex-col bg-sky-300 h-100 w-64 shadow-sm text-center rounded-xl my-6 relative top-10">
-        <figure className="flex justify-center">
-          <img className="h-40 w-40 rounded-3xl relative top-5" src={image} alt="Shoes" onError={handleError} />
-        </figure>
-        <div className="card-body flex flex-col flex-1 justify-between relative top-5">
+      <div className="flex flex-col bg-sky-300 h-100 w-64 shadow-sm hover:shadow-2xl transition-shadow duration-300 text-center rounded-xl my-6 relative top-10 transform hover:-translate-y-6 hover:scale-105 transition-transform z-10">
+        <img
+          className="h-40 w-40 rounded-3xl mx-auto mt-6 mb-2 object-cover transition-transform duration-500 hover:rotate-y-12 hover:scale-110"
+          style={{
+            perspective: "600px",
+          }}
+          src={image}
+          alt={title}
+          onError={handleError}
+        />
+        <div className="flex flex-col flex-1 justify-between px-4 py-4">
           <div>
-            <h2 className="card-title text-black">{title.slice(0,50)}</h2>
+            <h2 className="text-lg font-semibold text-black mb-2 truncate w-full block" title={title}>
+              {title}
+            </h2>
             <p>
-              <span className="badge badge-primary relative top-1">{category}</span>
+              <span className="inline-block bg-blue-500 font-bold text-white text-s px-2 py-1 rounded relative top-1">{category}</span>
             </p>
-            <p className="text-black">Rating: {rating}</p>
-            <p className="text-xl font-bold text-black">${price}</p>
+            <p className="text-black mt-2 flex items-center justify-center gap-1">
+              <span className="text-yellow-500 text-lg">★★★★</span>
+              <span>{rating}</span>
+            </p>
+            <p className="text-xl font-bold text-black mt-1">Price: ${price}</p>
           </div>
-          <div className="card-actions mt-auto flex justify-center">
-            <button className="btn bg-red-400 rounded-2xl">Add to Cart</button>
+          <div className="flex justify-center  bottom-[10px]">
+            <button className="bg-gradient-to-r from-red-500 via-orange-500 to-yellow-400 cursor-pointer hover:from-yellow-400 hover:to-orange-500 text-white font-semibold px-6 py-2 rounded-2xl shadow transition">
+              Add to Cart
+            </button>
           </div>
         </div>
       </div>

@@ -3,38 +3,38 @@ import { Link } from "react-router-dom";
 
 const Nav = () => {
   return (
-    <>
-      <div className="container">
-        <Link to="/" className="links">
-          <h1 className="heading">Ecomm</h1>
+    <nav className="bg-blue-100 shadow-md fixed top-0 left-0 w-full z-50 rounded-[10px]">
+      <div className="container mx-auto flex items-center justify-between py-4 px-6">
+        <Link to="/" className="text-4xl font-bold text-blue-600 hover:text-orange-800">
+          Ecomm
         </Link>
-        <div className="nav-items">
-          <Link to="/contact" className="links">
+        <div className="flex space-x-6">
+          <Link to="/contact" className="text-gray-900 font-bold hover:text-blue-600 transition cursor-pointer">
             Contact us
           </Link>
-          <Link to="/about" className="links">
+          <Link to="/about" className="text-gray-900 font-bold hover:text-blue-600 transition cursor-pointer">
             About us
           </Link>
-          <Link to="/review" className="links">
+          <Link to="/review" className="text-gray-900 font-bold hover:text-blue-600 transition cursor-pointer">
             Reviews
           </Link>
-          <Link to="/FAQ" className="links">
+          <Link to="/FAQ" className="text-gray-900 font-bold hover:text-blue-600 transition cursor-pointer">
             FAQ
           </Link>
-          <Link to="/Categories" className="links">
+          <Link to="/Categories" className="text-gray-900 font-bold hover:text-blue-600 transition cursor-pointer">
             Categories
           </Link>
         </div>
-        <div className="Login-cart">
-        <Link to="/Cart" className="links">
+        <div className="flex space-x-4">
+          <Link to="/Cart" className="text-gray-900 font-bold hover:text-blue-600 transition cursor-pointer">
             Cart
-        </Link>
-         <Link to="/Login" className="links">
-           Login
-        </Link>
+          </Link>
+          <Link to="/Login" className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-red-700 transition cursor-pointer">
+            Login
+          </Link>
         </div>
       </div>
-    </>
+    </nav>
   );
 };
 
