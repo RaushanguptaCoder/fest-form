@@ -1,5 +1,5 @@
 import React from "react";
-import products from "./Products.js";
+import products from "./products.js";
 import Card from "./Cards.jsx";
 
 
