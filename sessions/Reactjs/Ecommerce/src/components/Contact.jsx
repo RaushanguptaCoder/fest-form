@@ -38,19 +38,7 @@ const Contact = () => {
         </div>
       </div>
     </div>
-     <footer className="bg-blue-100 text-gray-700 py-6 mt-8">
-        <div className="max-w-2xl mx-auto px-4 flex flex-col md:flex-row items-center justify-between">
-          <div className="mb-2 md:mb-0 text-center md:text-left">
-            <span className="font-bold text-blue-600 text-lg">Ecomm</span> &copy; {new Date().getFullYear()}<br />
-            Your trusted online shopping partner.
-          </div>
-          <div className="text-center md:text-right text-sm">
-            <div>Email: support@ecomm.com</div>
-            <div>Phone: +1 234 567 8901</div>
-            <div>123 Ecomm Street, Shop City, Country</div>
-          </div>
-        </div>
-      </footer>
+     
    </>
     
   );
